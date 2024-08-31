@@ -41,7 +41,7 @@ export default function Component() {
       <h1 className="text-3xl font-bold mb-6">Agriculture Monitoring System</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* pH Level Card */}
+
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">pH Level</CardTitle>
@@ -53,7 +53,6 @@ export default function Component() {
           </CardContent>
         </Card>
 
-        {/* Water Level Card */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Water Level</CardTitle>
@@ -65,7 +64,6 @@ export default function Component() {
           </CardContent>
         </Card>
 
-        {/* Soil Moisture Card */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Soil Moisture</CardTitle>
@@ -77,7 +75,6 @@ export default function Component() {
           </CardContent>
         </Card>
 
-        {/* Temperature Card */}
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Temperature</CardTitle>
@@ -89,38 +86,8 @@ export default function Component() {
           </CardContent>
         </Card>
 
-        {/* Light Intensity Card */}
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Light Intensity</CardTitle>
-            <Sun className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <Gauge value={12000} max={20000} unit="lux" color="red" />
-            <p className="text-xs text-muted-foreground mt-2 text-center">Optimal range: 10000 - 15000 lux</p>
-          </CardContent>
-        </Card>
+        
 
-        {/* Crop Health Status Card */}
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Crop Health Status</CardTitle>
-            <Leaf className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="flex items-center space-x-2 mb-4">
-              <Badge variant="success">Good</Badge>
-              <span className="text-sm text-muted-foreground">Overall health is satisfactory</span>
-            </div>
-            <ul className="text-sm space-y-1">
-              <li>✅ pH level is optimal</li>
-              <li>✅ Water level is sufficient</li>
-              <li>⚠️ Soil moisture is slightly low</li>
-              <li>✅ Temperature is in range</li>
-              <li>✅ Light intensity is adequate</li>
-            </ul>
-          </CardContent>
-        </Card>
       </div>
     </div>
   )

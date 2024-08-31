@@ -10,73 +10,61 @@ export function HomePage() {
   const router = useRouter();
   return (
     <>
-      <header className="sticky top-0 z-20 border-b bg-white/80 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-950">
-        <div className="container mx-auto flex h-14 max-w-6xl items-center justify-between px-4 md:px-6">
+      <header className="sticky top-0 z-20 border-b bg-gray-950 backdrop-blur-sm text-white">
+        <div className="container mx-auto flex h-14 text-xl max-w-6xl items-center justify-between px-4 md:px-6">
           <Link className="flex items-center gap-2" href="#">
             
-            <span className="font-bold text-green-500">AgriConnect  </span>
+            <span className="font-bold text-[#308157] text-2xl">AgriConnect  </span>
           </Link>
           <nav className="hidden space-x-4 md:flex">
             <Link
-              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-[#003B36]"
               href="#"
             >
               <HomeIcon className="h-5 w-5" />
-              <span>Home</span>
+              <span className=" ">Home</span>
             </Link>
+          
             <Link
-              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
-              href="/medical-history"
-            >
-              <HashIcon className="h-5 w-5" />
-              <span>Cold Storage</span>
-            </Link>
-            <Link
-              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
               href="/telemedicine"
             >
-              <BellIcon className="h-5 w-5" />
-              <span>Marketplace</span>
+              <HomeIcon className="h-5 w-5" />
+              <span className=" ">Marketplace</span>
             </Link>
             <Link
-              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
               href="/chatting"
             >
-              <MailIcon className="h-5 w-5" />
-              <span>Messages</span>
+              <GaugeIcon className="h-5 w-5" />
+              <span className=" ">Monitoring</span>
             </Link>
           </nav>
           <div className="flex items-center gap-2">
-            <Button className="rounded-full" size="icon" variant="ghost">
-              <SearchIcon className="h-5 w-5" />
-              <span className="sr-only">Search</span>
-            </Button>
-            <Button className="rounded-full" size="icon" variant="ghost">
-              <GaugeIcon className="h-5 w-5" />
-              <span className="sr-only">Settings</span>
-            </Button>
+            
           
           </div>
         </div>
       </header>
-      <main className="container mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-6 md:grid-cols-[1fr_300px] md:px-6">
-        <div className="space-y-6 grid grid-cols-1">
-          <div className="rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-950 dark:border-gray-800 ">
-            <div className="flex items-center gap-3">
+      <main className="container mx-auto grid  grid-cols-1 gap-6 px-4 py-6 md:grid-cols-[1fr_300px] md:px-6">
+        <div className="space-y-6 grid grid-cols-1 rounded-xl">
+          <div className="rounded-xl border border-gray-200 bg-white p-4  ">
+            <div className="flex items-center gap-3 ">
               <Avatar>
                 <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <Input
-                className="flex-1 bg-transparent p-0 text-base font-medium outline-none"
+                className="flex-1 bg-transparent p-0  text-base font-medium outline-none"
                 placeholder="What's happening?"
               />
-              <Button className="rounded-full" size="sm" variant="primary">
+              
+              <Button className="rounded-xl border bg-green-800 hover:bg-[#17504b]  text-white " size="lg" variant="primary">
                 Post
               </Button>
             </div>
           </div>
-          <div className="grid gap-4 rounded-xl border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-950 md:grid-cols-2 lg:grid-cols-1 dark:border-gray-800">
+          <div className="grid gap-4 rounded-xl border border-gray-200 bg-white p-4 md:grid-cols-2 lg:grid-cols-1 ">
             <div className="flex  gap-3">
               <Avatar>
                 <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
@@ -93,7 +81,7 @@ export function HomePage() {
                 </p>
                 
                 <div className="flex items-center gap-2">
-                <button className="bg-gray-900 w-[10vw] h-8 rounded-xl border border-white">
+                <button className=" w-[10vw] h-8 rounded-xl border border-white">
                 Avg. Price - ₹2000
                 </button>
                   <Button className="rounded-full" size="icon" onClick={() => {
@@ -120,12 +108,12 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Jagdish Paliwal</span>
-                  <span className="text-gray-500 dark:text-gray-400">Farmer</span>
-                  <span className="text-gray-500 dark:text-gray-400" />
+                  <span className="">Farmer</span>
+                  <span className="" />
                 </div>
                 <p>Cotton Producer </p>
                 <div className="flex items-center gap-2">
-                <button className="bg-gray-900 w-[10vw] h-8 rounded-xl border border-white">
+                <button className="w-[10vw] h-8 rounded-xl border">
                 Avg.Price- ₹230/kg
                 </button>
                 <Button className="rounded-full" size="icon" onClick={() => {
@@ -152,12 +140,12 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Manoj Lodhi</span>
-                  <span className="text-gray-500 dark:text-gray-400">Bima Officer</span>
-                  <span className="text-gray-500 dark:text-gray-400" />
+                  <span className="">Bima Officer</span>
+                  <span className="" />
                 </div>
                 <p>Get Crop Insurance! </p>
                 <div className="flex items-center gap-2">
-                <button className="bg-gray-900 w-[10vw] h-8 rounded-xl border border-white">
+                <button className=" w-[10vw] h-8 rounded-xl border border-white">
                 Avg.Price- ₹500
                 </button>
                 <Button className="rounded-full" size="icon" onClick={() => {
@@ -184,14 +172,14 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Rajat Yadav</span>
-                  <span className="text-gray-500 dark:text-gray-400">Dairy</span>
-                  <span className="text-gray-500 dark:text-gray-400" />
+                  <span className="">Dairy</span>
+                  <span className="" />
                 </div>
                 <p>
                   Dairy
                 </p>
                 <div className="flex items-center gap-2">
-                <button className="bg-gray-900 w-[10vw] h-8 rounded-xl border border-white">
+                <button className=" w-[10vw] h-8 rounded-xl border border-white">
                 Avg.Price- ₹58/L
                 </button>
                 <Button className="rounded-full" size="icon" onClick={() => {
@@ -215,7 +203,7 @@ export function HomePage() {
         <div className="space-y-6">
         <Card>
             <CardHeader>
-              <CardTitle>Trending Fertilizers</CardTitle>
+              <CardTitle className="text-[#308157]">Trending Fertilizers</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -254,7 +242,7 @@ export function HomePage() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Cold Storages</CardTitle>
+              <CardTitle className="text-[#308157]">Cold Storages</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -293,7 +281,7 @@ export function HomePage() {
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>Exporter</CardTitle>
+              <CardTitle className="text-[#308157]">Exporter</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
