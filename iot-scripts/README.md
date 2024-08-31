@@ -1,0 +1,1 @@
+This folder is reserved and responsible for iot scripts
