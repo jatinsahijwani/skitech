@@ -24,20 +24,20 @@ import { Input } from "@/components/ui/input"
 export function Marketplace() {
   return (
     <div className="bg-background">
-      <header className="bg-muted/40 py-2 px-4 md:px-6">
+      <header className="bg-muted/40 py-2 px-4 md:px-6 bg-gray-950 text-white">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <LeafIcon className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg">Agriconnect</span>
+          <LeafIcon className="h-6 w-6 text-primary text-[#27925b]" />
+            <span className="font-semibold text-lg text-[#27925b]">Agriconnect</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="#" className="text-muted-foreground hover:text-primary transition" prefetch={false}>
+            <Link href="#" className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]" prefetch={false}>
               Home
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition" prefetch={false}>
+            <Link href="#" className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]" prefetch={false}>
               Marketplace
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition" prefetch={false}>
+            <Link href="#" className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]" prefetch={false}>
               Crop Monitoring
             </Link>
           </nav>
@@ -48,7 +48,7 @@ export function Marketplace() {
       </header>
       <section className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
         <img
-          src="/placeholder.svg"
+          src="/bg.jpg"
           alt="Farmer's Market"
           width={1920}
           height={1080}
@@ -57,12 +57,10 @@ export function Marketplace() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-[5vw]">
             Discover Fresh Produce from Local Farmers
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8">
-            Browse our wide selection of fruits, vegetables, and more, all sourced directly from nearby farms.
-          </p>
+         
           <div className="max-w-xl w-full">
             <Input
               type="search"

@@ -135,7 +135,7 @@ export function Monitoring() {
             <CardTitle>Crop Health</CardTitle>
           </CardHeader>
           <CardContent>
-            <LineChart className="w-full aspect-[4/3]" />
+            <LineChart className="w-full aspect-[16/8]" />
           </CardContent>
           <CardFooter className="flex justify-end">
             <Button variant="link" size="sm">
@@ -148,7 +148,7 @@ export function Monitoring() {
             <CardTitle>Soil Moisture</CardTitle>
           </CardHeader>
           <CardContent>
-            <LineChart className="w-full aspect-square" />
+            <LineChart className="w-full aspect-[16/8]" />
           </CardContent>
           <CardFooter className="flex justify-end">
             <Button variant="link" size="sm">
@@ -162,7 +162,7 @@ export function Monitoring() {
             <CardTitle>Yield Prediction</CardTitle>
           </CardHeader>
           <CardContent>
-            <BarChart className="w-full aspect-[4/3]" />
+            <BarChart className="w-full aspect-[16/8]" />
           </CardContent>
           <CardFooter className="flex justify-end">
             <Button variant="link" size="sm">
@@ -171,19 +171,6 @@ export function Monitoring() {
           </CardFooter>
         </Card>
         
-        <Card className="hover:shadow-lg transition-shadow duration-300">
-          <CardHeader>
-            <CardTitle>Irrigation Monitoring</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <LineChart className="w-full aspect-[4/3]" />
-          </CardContent>
-          <CardFooter className="flex justify-end">
-            <Button variant="link" size="sm">
-              View Details
-            </Button>
-          </CardFooter>
-        </Card>
       </main>
     </div>
   )

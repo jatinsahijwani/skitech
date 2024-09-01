@@ -22,36 +22,36 @@ import Link from "next/link"
 export function Agrihome() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-background border-b">
+      <header className="px-4 lg:px-6 h-14 flex items-center bg-gray-950 text-white border-b">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <LeafIcon className="h-6 w-6 text-primary" />
-          <span className="text-lg font-bold text-foreground">Agriconnect</span>
+          <LeafIcon className="h-6 w-6 text-primary text-[#27925b]" />
+          <span className="text-lg font-bold text-foreground text-[#27925b]">Agriconnect</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-foreground"
+            className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
             prefetch={false}
           >
             Marketplace
           </Link>
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-foreground"
+            className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
             prefetch={false}
           >
             Monitoring
           </Link>
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-foreground"
+            className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
             prefetch={false}
           >
             Warehouses
           </Link>
           <Link
             href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-foreground"
+            className="gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
             prefetch={false}
           >
             About
@@ -74,14 +74,14 @@ export function Agrihome() {
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center bg-black text-white hover:bg-green-700  rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
                   Get Started
                 </Link>
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-primary-foreground bg-primary px-8 text-sm font-medium shadow-sm transition-colors hover:bg-primary-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 bg-black text-white hover:bg-green-700 items-center justify-center rounded-md border border-primary-foreground bg-primary px-8 text-sm font-medium shadow-sm transition-colors hover:bg-primary-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
                   Learn More
@@ -89,7 +89,7 @@ export function Agrihome() {
               </div>
             </div>
             <img
-              src="/placeholder.svg"
+              src="/Smart-Farming.png"
               width="550"
               height="550"
               alt="Hero"
