@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
-import AuthContract from "@/utils/contracts/AuthContract";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -13,7 +12,6 @@ export default function Login() {
   const [password,setPassword] = useState('');
   const [error,setError] = useState('');
   const handleSubmit = async() => {
-    const response = await AuthContract.methods.login(username,password).call();
     if(response == "true")
       {
         router.push('/home');
@@ -24,13 +22,13 @@ export default function Login() {
     }
   }
   return (
-    <div className="flex min-h-[100dvh] w-full items-center justify-center bg-gradient-to-b from-black to-gray-500 px-4 py-12 md:px-6 lg:py-24">
+    <div className="flex min-h-[100dvh] w-full items-center justify-center bg-gradient-to-b from-gray-700 to-gray-200 px-4 py-12 md:px-6 lg:py-24">
       <div className="mx-auto flex w-full max-w-[70vw] flex-col items-center justify-between gap-8 rounded-xl bg-white p-6 shadow-lg md:flex-row md:p-12">
         <div className="flex-1 space-y-4">
-          <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl w-[25vw]">
-            Welcome to Medi-Connect
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900  w-[25vw]">
+            Welcome to Agri-Connect
           </h1>
-          <p className="text-lg text-gray-600">Providing exceptional healthcare services to our community.</p>
+          <p className="text-lg text-gray-600">Providing exceptional one stop solution for Agricultural services.</p>
           <div className="relative group">
             <img
               alt="Healthcare Hero"
@@ -59,7 +57,7 @@ export default function Login() {
             <CardHeader className="space-y-1 p-6">
               <CardTitle className="text-2xl font-bold">Login to your account</CardTitle>
               <CardDescription className="text-gray-500 dark:text-gray-400">
-                Enter your credentials to access your MedCare account.
+                Enter your credentials to access your account.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4 p-6">
@@ -93,7 +91,7 @@ export default function Login() {
             </CardContent>
             <CardFooter className="p-6">
               <Button
-                className="w-full bg-gray-700 animate-[bounce_1s_ease-in-out] hover:animate-[bounce_1s_ease-in-out] hover:scale-105 transition-transform duration-300 ease-in-out"
+                className="w-full bg-green-700 animate-[bounce_1s_ease-in-out] hover:animate-[bounce_1s_ease-in-out] hover:scale-105 transition-transform duration-300 ease-in-out"
                 variant="primary"
                 onClick={handleSubmit}
               >

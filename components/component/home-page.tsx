@@ -48,22 +48,7 @@ export function HomePage() {
       </header>
       <main className="container mx-auto grid  grid-cols-1 gap-6 px-4 py-6 md:grid-cols-[1fr_300px] md:px-6">
         <div className="space-y-6 grid grid-cols-1 rounded-xl">
-          <div className="rounded-xl border border-gray-200 bg-gray-200 p-4  ">
-            <div className="flex items-center gap-3 ">
-              <Avatar>
-                <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <Input
-                className="flex-1 bg-transparent p-0  text-base font-medium outline-none"
-                placeholder=" "
-              />
-              
-              <Button className="rounded-xl border bg-green-800 hover:bg-[#17504b]  text-white " size="lg" variant="primary">
-                Post
-              </Button>
-            </div>
-          </div>
+          
           <div className="grid gap-4 rounded-xl border border-gray-200 bg-gray-200 p-4 md:grid-cols-2 lg:grid-cols-1 ">
             <div className="flex  gap-3">
               <Avatar>

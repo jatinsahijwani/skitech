@@ -1,10 +1,10 @@
-import { Selection } from '@/components/component/selection'
+"use client"
 import React from 'react'
-
+import { Monitoring } from '@/components/component/monitoring'
 const page = () => {
   return (
     <div>
-      <Selection />
+      <Monitoring />
     </div>
   )
 }
