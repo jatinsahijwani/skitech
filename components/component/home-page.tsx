@@ -10,7 +10,7 @@ export function HomePage() {
   const router = useRouter();
   return (
     <>
-      <header className="sticky top-0 z-20 border-b bg-gray-950 backdrop-blur-sm text-white">
+      <header className="sticky top-0 z-20  bg-gray-950 backdrop-blur-sm text-white">
         <div className="container mx-auto flex h-14 text-xl max-w-6xl items-center justify-between px-4 md:px-6">
           <Link className="flex items-center gap-2" href="#">
             
@@ -27,14 +27,14 @@ export function HomePage() {
           
             <Link
               className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
-              href="/telemedicine"
+              href=""
             >
               <HomeIcon className="h-5 w-5" />
               <span className=" ">Marketplace</span>
             </Link>
             <Link
               className="flex items-center gap-2 rounded-full px-4 py-2 font-medium transition-colors hover:bg-gray-100 dark:hover:bg-[#003B36]"
-              href="/chatting"
+              href="/cropmonitoring"
             >
               <GaugeIcon className="h-5 w-5" />
               <span className=" ">Monitoring</span>
@@ -48,7 +48,7 @@ export function HomePage() {
       </header>
       <main className="container mx-auto grid  grid-cols-1 gap-6 px-4 py-6 md:grid-cols-[1fr_300px] md:px-6">
         <div className="space-y-6 grid grid-cols-1 rounded-xl">
-          <div className="rounded-xl border border-gray-200 bg-white p-4  ">
+          <div className="rounded-xl border border-gray-200 bg-gray-200 p-4  ">
             <div className="flex items-center gap-3 ">
               <Avatar>
                 <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
@@ -56,7 +56,7 @@ export function HomePage() {
               </Avatar>
               <Input
                 className="flex-1 bg-transparent p-0  text-base font-medium outline-none"
-                placeholder="What's happening?"
+                placeholder=" "
               />
               
               <Button className="rounded-xl border bg-green-800 hover:bg-[#17504b]  text-white " size="lg" variant="primary">
@@ -64,7 +64,7 @@ export function HomePage() {
               </Button>
             </div>
           </div>
-          <div className="grid gap-4 rounded-xl border border-gray-200 bg-white p-4 md:grid-cols-2 lg:grid-cols-1 ">
+          <div className="grid gap-4 rounded-xl border border-gray-200 bg-gray-200 p-4 md:grid-cols-2 lg:grid-cols-1 ">
             <div className="flex  gap-3">
               <Avatar>
                 <AvatarImage alt="@shadcn" src="/placeholder-avatar.jpg" />
@@ -73,7 +73,7 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Raghu Parmar</span>
-                  <span className="text-gray-500 dark:text-gray-400">Warehouse Owner</span>
+                  <span className="text-green-700 ">Warehouse Owner</span>
                   <span className="text-gray-500 dark:text-gray-400" />
                 </div>
                 <p>
@@ -81,7 +81,7 @@ export function HomePage() {
                 </p>
                 
                 <div className="flex items-center gap-2">
-                <button className=" w-[10vw] h-8 rounded-xl border border-white">
+                <button className=" w-[10vw] h-8 rounded-xl bg-green-800 text-white border border-white">
                 Avg. Price - ₹2000
                 </button>
                   <Button className="rounded-full" size="icon" onClick={() => {
@@ -108,12 +108,12 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Jagdish Paliwal</span>
-                  <span className="">Farmer</span>
+                  <span className="text-green-700">Farmer</span>
                   <span className="" />
                 </div>
                 <p>Cotton Producer </p>
                 <div className="flex items-center gap-2">
-                <button className="w-[10vw] h-8 rounded-xl border">
+                <button className="w-[10vw] h-8 rounded-xl border bg-green-800 text-white border-white">
                 Avg.Price- ₹230/kg
                 </button>
                 <Button className="rounded-full" size="icon" onClick={() => {
@@ -140,12 +140,12 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Manoj Lodhi</span>
-                  <span className="">Bima Officer</span>
+                  <span className="text-green-700">Bima Officer</span>
                   <span className="" />
                 </div>
                 <p>Get Crop Insurance! </p>
                 <div className="flex items-center gap-2">
-                <button className=" w-[10vw] h-8 rounded-xl border border-white">
+                <button className=" w-[10vw] h-8 rounded-xl border bg-green-800 text-white border-white">
                 Avg.Price- ₹500
                 </button>
                 <Button className="rounded-full" size="icon" onClick={() => {
@@ -172,14 +172,14 @@ export function HomePage() {
               <div className="flex-1 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Rajat Yadav</span>
-                  <span className="">Dairy</span>
+                  <span className="text-green-700">Dairy</span>
                   <span className="" />
                 </div>
                 <p>
                   Dairy
                 </p>
                 <div className="flex items-center gap-2">
-                <button className=" w-[10vw] h-8 rounded-xl border border-white">
+                <button className=" w-[10vw] h-8 rounded-xl bg-green-800 text-white border border-white">
                 Avg.Price- ₹58/L
                 </button>
                 <Button className="rounded-full" size="icon" onClick={() => {
