@@ -44,7 +44,7 @@ export default function Component() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://192.168.137.67/moisture",{
+        const response = await fetch("http://192.168.137.222/moisture",{
           method: "GET"
         });
         const data = await response.json();

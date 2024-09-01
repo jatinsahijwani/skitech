@@ -75,29 +75,29 @@ export function Marketplace() {
           <h2 className="text-xl font-bold mb-4">Categories</h2>
           <div className="grid gap-2">
             <Link href="#" className="text-primary-foreground hover:underline" prefetch={false}>
-              Fruits
+              Cold Storage
             </Link>
             <Link href="#" className="text-primary-foreground hover:underline" prefetch={false}>
-              Vegetables
+              Fertilizer
             </Link>
             <Link href="#" className="text-primary-foreground hover:underline" prefetch={false}>
-              Grains
+              Seeds
             </Link>
             <Link href="#" className="text-primary-foreground hover:underline" prefetch={false}>
-              Herbs &amp; Spices
+              Tools
             </Link>
             <Link href="#" className="text-primary-foreground hover:underline" prefetch={false}>
-              Nuts &amp; Seeds
+              
             </Link>
             <Link href="#" className="text-primary-foreground hover:underline" prefetch={false}>
-              Dairy
+              
             </Link>
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/soybeans.png"
               alt="Farmer's Apples"
               width={400}
               height={300}
@@ -105,7 +105,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Fresh Apples from Farmer John</h3>
+              <h3 className="text-lg font-bold mb-2">Soybean seeds</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -114,13 +114,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">4.3</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹199 per kg</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹48 per kg</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/wheat.png"
               alt="Organic Carrots from Farmer's Market"
               width={400}
               height={300}
@@ -128,7 +128,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Organic Carrots from Farmer's Market</h3>
+              <h3 className="text-lg font-bold mb-2">Wheat Seeds</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -137,13 +137,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">4.8</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹119 per kg</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹53 per kg</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/maize.png"
               alt="Whole Wheat Flour from Local Mill"
               width={400}
               height={300}
@@ -151,7 +151,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Whole Wheat Flour from Local Mill</h3>
+              <h3 className="text-lg font-bold mb-2">Corn(Maize) seeds</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -160,13 +160,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">3.7</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹229 per kg</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹42 per kg</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/groundnut.png"
               alt="Fresh Basil from Farmer's Garden"
               width={400}
               height={300}
@@ -174,7 +174,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Fresh Basil from Farmer's Garden</h3>
+              <h3 className="text-lg font-bold mb-2">Groundnut seeds</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -183,13 +183,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">4.7</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹329 per bunch</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹12 per bunch</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/urea.png"
               alt="Roasted Almonds from Local Farm"
               width={400}
               height={300}
@@ -197,7 +197,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Roasted Almonds from Local Farm</h3>
+              <h3 className="text-lg font-bold mb-2">Urea Fertilizer</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -206,13 +206,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <span className="ml-2 text-muted-foreground">5.0</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹459 per kg</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹18 per kg</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/driller.png"
               alt="Organic Eggs from Nearby Farm"
               width={400}
               height={300}
@@ -220,7 +220,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Organic Eggs from Nearby Farm</h3>
+              <h3 className="text-lg font-bold mb-2">Seed Driller</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -229,13 +229,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">4.6</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹329 per dozen</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹3000 per day</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/storage.png"
               alt="Quinoa from Local Cooperative"
               width={400}
               height={300}
@@ -243,7 +243,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Quinoa from Local Cooperative</h3>
+              <h3 className="text-lg font-bold mb-2">Cold Storage</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -252,13 +252,13 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">3.9</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹259 per kg</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹30 per cubic meter/month</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
           <div className="bg-muted rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/placeholder.svg"
+              src="/pestisides.png"
               alt="Fresh Spinach from Farmer's Market"
               width={400}
               height={300}
@@ -266,7 +266,7 @@ export function Marketplace() {
               style={{ aspectRatio: "400/300", objectFit: "cover" }}
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">Fresh Spinach from Farmer's Market</h3>
+              <h3 className="text-lg font-bold mb-2">Chlorpyrifos Pesticides</h3>
               <div className="flex items-center mb-2">
                 <StarIcon className="w-5 h-5 fill-primary" />
                 <StarIcon className="w-5 h-5 fill-primary" />
@@ -275,8 +275,8 @@ export function Marketplace() {
                 <StarIcon className="w-5 h-5 fill-muted stroke-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">4.6</span>
               </div>
-              <p className="text-muted-foreground mb-4">₹159 per kg</p>
-              <Button className="w-full">Add to Cart</Button>
+              <p className="text-muted-foreground mb-4">₹450 per lit</p>
+              <Button className="w-full">Get Contact</Button>
             </div>
           </div>
         </div>
