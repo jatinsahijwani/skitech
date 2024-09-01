@@ -1,8 +1,10 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Leaf, Droplet, Thermometer, Sun } from "lucide-react"
+import { useState,useEffect } from "react"
 
-const Gauge = ({ value, max, unit, color }) => {
+const Gauge = ({ value, max, unit, color }: any) => {
   const percentage = (value / max) * 100
   const angle = (percentage / 100) * 360
 
@@ -36,6 +38,32 @@ const Gauge = ({ value, max, unit, color }) => {
 }
 
 export default function Component() {
+
+  const [moisture,setMoisture] = useState(0);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://192.168.137.67/moisture",{
+          method: "GET"
+        });
+        const data = await response.json();
+        let moisture = data.moistureData;
+        moisture = 1024 - moisture;
+        moisture = Math.floor(moisture / 1024 * 100);
+        console.log(moisture + "%");
+        setMoisture(moisture);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData(); // Initial fetch
+    const intervalId = setInterval(fetchData, 1000); // Fetch every 5 seconds
+
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+ }, []);
+  
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Agriculture Monitoring System</h1>
@@ -59,7 +87,7 @@ export default function Component() {
             <Droplet className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <Gauge value={55} max={100} unit="%" color="#3390C1" />
+            <Gauge value={moisture} max={100} unit="%" color="#3390C1" />
             <p className="text-xs text-muted-foreground mt-2 text-center">Optimal range: 60% - 80%</p>
           </CardContent>
         </Card>
